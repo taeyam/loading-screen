@@ -1,0 +1,92 @@
+*{
+   box-sizing: border-box;
+   margin: 0px;
+   font-family: 'Work Sans', sans-serif;
+
+   font-family: 'Aclonica', sans-serif;
+}
+
+
+body{
+/* background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.7)),url(skybackground.jpg); */
+background-color: rgb(40, 36, 36);
+background-repeat: no-repeat;
+background-size: cover;
+/* Animation */
+animation-name: darkerbackground;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 2.3s;
+    animation-duration: 14s;
+    animation-timing-function: linear;
+
+}
+
+h1{
+    /* Text */
+    color: rgba(0, 0, 0, 0);
+    font-size:320px;
+    letter-spacing: -10px;
+    text-align: center;
+    margin-top: 200px;
+    
+    /* Background */
+    background-image:url(colorfinal1.png);
+    background-position: left 0px top 320px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    -webkit-background-clip:text;
+    background-clip: text;
+    /* Animation */
+    animation-name: flow;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 2.3s;
+    animation-duration: 14s;
+    animation-timing-function: linear;
+    
+}
+
+/* Darker Background */
+
+@keyframes darkerbackground{
+    0%{background-color: rgb(40, 36, 36);
+    }
+    50%{background-color:black;}
+   100%{background-color: rgb(40, 36, 36);
+   }
+
+}
+
+/* Flow */
+
+@keyframes flow{
+    0%{
+    background-position: left 0px top 320px;
+
+}
+3%{
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+50%{  
+      background-position: left 1500px top -30px;
+      
+      text-shadow: 0 0 20px rgba(255, 255, 255,0.1), 0 0 30px rgba(77, 228, 255,0.1), 0 0 40px rgba(77, 228, 255,0.1),
+                   0 0 50px rgba(77, 228, 255,0.1), 0 0 60px rgba(77, 228, 255,0.1), 0 0 70px rgba(77, 228, 255,0.1),
+                   0 0 80px rgba(77, 228, 255,0.1), 0 0 90px rgba(77, 228, 255,0.1), 0 0 100px rgba(77, 228, 255,0.1)
+                   , 0 0 1300px rgba(77, 228, 255,0.1), 0 0 140px rgba(77, 228, 255,0.1);
+      
+}
+
+95%{
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+100%{
+
+    background-position: left 3000px top 350px;
+
+}
+}
+
+
